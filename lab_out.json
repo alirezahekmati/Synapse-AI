@@ -1,0 +1,222 @@
+[
+  {
+    "Equipment_Name": "Mass Spectrometer",
+    "Model": "Thermo Scientific Q Exactive",
+    "Category": "Analytical",
+    "Institution": "University of Science",
+    "Department": "Chemistry Department",
+    "Contact_Email": "chem.lab@uniscience.edu",
+    "Access_Level": "Collaboration Required",
+    "Specs": "High-resolution, HPLC-MS capability",
+    "Distance_km": 15
+  },
+  {
+    "Equipment_Name": "NMR Spectrometer",
+    "Model": "Bruker 600 MHz",
+    "Category": "Analytical",
+    "Institution": "National Research Center",
+    "Department": "Structural Biology",
+    "Contact_Email": "nmr.facility@nrc.gov",
+    "Access_Level": "Request",
+    "Specs": "600 MHz, Cryoprobe",
+    "Distance_km": 25
+  },
+  {
+    "Equipment_Name": "X-ray Diffractometer",
+    "Model": "Rigaku XtaLAB Synergy-S",
+    "Category": "Analytical",
+    "Institution": "Materials Institute",
+    "Department": "Crystallography",
+    "Contact_Email": "xray@materials.org",
+    "Access_Level": "Request",
+    "Specs": "Single crystal, dual wavelength",
+    "Distance_km": 30
+  },
+  {
+    "Equipment_Name": "Confocal Microscope",
+    "Model": "Zeiss LSM 980",
+    "Category": "Microscopy",
+    "Institution": "University of Science",
+    "Department": "Biology Department",
+    "Contact_Email": "microscopy@uniscience.edu",
+    "Access_Level": "Request",
+    "Specs": "5 lasers, spectral detection",
+    "Distance_km": 15
+  },
+  {
+    "Equipment_Name": "Transmission Electron Microscope",
+    "Model": "JEOL JEM-2100F",
+    "Category": "Microscopy",
+    "Institution": "National Research Center",
+    "Department": "Structural Biology",
+    "Contact_Email": "tem@nrc.gov",
+    "Access_Level": "Collaboration Required",
+    "Specs": "200kV, STEM capability",
+    "Distance_km": 25
+  },
+  {
+    "Equipment_Name": "Super-Resolution Microscope",
+    "Model": "Leica STELLARIS 8",
+    "Category": "Microscopy",
+    "Institution": "Medical University",
+    "Department": "Cell Biology",
+    "Contact_Email": "imaging@meduni.edu",
+    "Access_Level": "Collaboration Required",
+    "Specs": "STED, Confocal, White Light Laser",
+    "Distance_km": 20
+  },
+  {
+    "Equipment_Name": "Automated Liquid Handler",
+    "Model": "Hamilton STAR",
+    "Category": "Automation",
+    "Institution": "Biotech Institute",
+    "Department": "High-Throughput Screening",
+    "Contact_Email": "automation@biotech.org",
+    "Access_Level": "Request",
+    "Specs": "96/384-well capacity",
+    "Distance_km": 35
+  },
+  {
+    "Equipment_Name": "Next-Gen Sequencer",
+    "Model": "Illumina NovaSeq 6000",
+    "Category": "Genomics",
+    "Institution": "Genomics Center",
+    "Department": "Sequencing Facility",
+    "Contact_Email": "sequencing@genomics.org",
+    "Access_Level": "Open",
+    "Specs": "Whole genome sequencing, up to 6TB output",
+    "Distance_km": 40
+  },
+  {
+    "Equipment_Name": "Flow Cytometer/Cell Sorter",
+    "Model": "BD FACSAria Fusion",
+    "Category": "Cell Biology",
+    "Institution": "Medical University",
+    "Department": "Immunology",
+    "Contact_Email": "facs@meduni.edu",
+    "Access_Level": "Request",
+    "Specs": "5 lasers, 18 colors detection",
+    "Distance_km": 20
+  },
+  {
+    "Equipment_Name": "Ultracentrifuge",
+    "Model": "Beckman Coulter Optima XPN-100",
+    "Category": "Processing",
+    "Institution": "University of Science",
+    "Department": "Biochemistry",
+    "Contact_Email": "biochem@uniscience.edu",
+    "Access_Level": "Open",
+    "Specs": "100,000 rpm max speed",
+    "Distance_km": 15
+  },
+  {
+    "Equipment_Name": "Freeze Dryer",
+    "Model": "Labconco FreeZone 12L",
+    "Category": "Processing",
+    "Institution": "Food Science Institute",
+    "Department": "Food Technology",
+    "Contact_Email": "foodtech@foodsci.edu",
+    "Access_Level": "Open",
+    "Specs": "12L capacity, -84°C collector",
+    "Distance_km": 28
+  },
+  {
+    "Equipment_Name": "Bioreactor",
+    "Model": "Sartorius BIOSTAT B 10L",
+    "Category": "Bioprocessing",
+    "Institution": "Biotech Institute",
+    "Department": "Fermentation Technology",
+    "Contact_Email": "fermentation@biotech.org",
+    "Access_Level": "Collaboration Required",
+    "Specs": "10L, fully controlled",
+    "Distance_km": 35
+  },
+  {
+    "Equipment_Name": "Universal Testing Machine",
+    "Model": "Instron 5967",
+    "Category": "Materials Testing",
+    "Institution": "Engineering University",
+    "Department": "Materials Engineering",
+    "Contact_Email": "materials@engu.edu",
+    "Access_Level": "Request",
+    "Specs": "30kN load capacity",
+    "Distance_km": 22
+  },
+  {
+    "Equipment_Name": "Rheometer",
+    "Model": "TA Instruments Discovery HR-3",
+    "Category": "Materials Testing",
+    "Institution": "Polymer Research Center",
+    "Department": "Polymer Physics",
+    "Contact_Email": "rheology@polymer.org",
+    "Access_Level": "Open",
+    "Specs": "Temperature range -40°C to 200°C",
+    "Distance_km": 45
+  },
+  {
+    "Equipment_Name": "ICP-MS",
+    "Model": "Agilent 8900",
+    "Category": "Analytical",
+    "Institution": "Environmental Institute",
+    "Department": "Trace Analysis",
+    "Contact_Email": "trace@environment.org",
+    "Access_Level": "Request",
+    "Specs": "Triple quadrupole, ppq detection",
+    "Distance_km": 32
+  },
+  {
+    "Equipment_Name": "Thermal Analysis System",
+    "Model": "TA Instruments SDT 650",
+    "Category": "Materials Testing",
+    "Institution": "Materials Institute",
+    "Department": "Thermal Analysis",
+    "Contact_Email": "thermal@materials.org",
+    "Access_Level": "Open",
+    "Specs": "Simultaneous DSC/TGA",
+    "Distance_km": 30
+  },
+  {
+    "Equipment_Name": "BSL-3 Laboratory Facility",
+    "Model": "Custom Build",
+    "Category": "Safety",
+    "Institution": "Medical University",
+    "Department": "Infectious Disease Research",
+    "Contact_Email": "bsl3@meduni.edu",
+    "Access_Level": "Collaboration Required",
+    "Specs": "Fully certified BSL-3 lab space",
+    "Distance_km": 20
+  },
+  {
+    "Equipment_Name": "High Performance Computing Cluster",
+    "Model": "Dell PowerEdge, 500 nodes",
+    "Category": "Computing",
+    "Institution": "Computing Center",
+    "Department": "Research Computing",
+    "Contact_Email": "hpc@computing.org",
+    "Access_Level": "Request",
+    "Specs": "2 PetaFLOPS, 500 TB storage",
+    "Distance_km": 15
+  },
+  {
+    "Equipment_Name": "3D Bioprinter",
+    "Model": "CELLINK BIO X",
+    "Category": "Fabrication",
+    "Institution": "Tissue Engineering Center",
+    "Department": "Bioprinting",
+    "Contact_Email": "bioprinting@tissue.org",
+    "Access_Level": "Collaboration Required",
+    "Specs": "Temperature controlled printing, multiple printheads",
+    "Distance_km": 38
+  },
+  {
+    "Equipment_Name": "PCR Thermal Cycler",
+    "Model": "Bio-Rad T100",
+    "Category": "Molecular Biology",
+    "Institution": "Community College",
+    "Department": "Biology Department",
+    "Contact_Email": "biology@cc.edu",
+    "Access_Level": "Open",
+    "Specs": "96-well, gradient capability",
+    "Distance_km": 5
+  }
+]

@@ -1,0 +1,400 @@
+/* General Styles */
+:root {
+    --primary-color: #3498db;
+    --primary-dark: #2980b9;
+    --secondary-color: #2ecc71;
+    --secondary-dark: #27ae60;
+    --bg-color: #f4f7f9;
+    --container-bg: #ffffff;
+    --text-color: #34495e;
+    --light-text: #7f8c8d;
+    --border-color: #e0e4e8;
+    --error-color: #e74c3c;
+    --success-color: #2ecc71; /* Added for consistency */
+    --user-message-bg: #eaf2f8;
+    --ai-message-bg: #e8f6f3;
+    --system-message-bg: #fef5e7; /* Updated color */
+    --code-bg: #ecf0f1;
+    --font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column; /* Stack password gate and container */
+    align-items: center; /* Center items */
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Password Gate Styles */
+#password-gate {
+    background-color: var(--container-bg);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 400px;
+    width: 90%; /* Responsive width */
+}
+
+#password-gate h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.password-input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#password-input {
+    flex-grow: 1;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1em;
+}
+#password-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+
+#password-submit {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+#password-submit:hover {
+    background-color: var(--primary-dark);
+}
+
+#password-error {
+    color: var(--error-color);
+    min-height: 1.2em; /* Prevent layout shift */
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Main Container */
+.container {
+    /* display: none;  <-- Set via inline style in HTML initially */
+    width: 100%;
+    max-width: 800px; /* Slightly narrower for better readability */
+    margin: 20px auto;
+    background-color: var(--container-bg);
+    padding: 25px 35px; /* Adjusted padding */
+    border-radius: 12px; /* Softer corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Subtler shadow */
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Rest of the styles are the same as the previous version --- */
+/* (Header, Chat Interface, Chat Log, Messages, Input Area, Send Button, Loading, Formatting, Responsiveness) */
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: var(--text-color);
+    margin-bottom: 8px;
+    font-size: 2.2em; /* Slightly larger */
+}
+
+header p {
+    color: var(--light-text);
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+h2 {
+    color: var(--text-color);
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.error-message { /* Style for general errors */
+    color: var(--error-color);
+    font-weight: bold;
+}
+.success-message { /* Style for success */
+    color: var(--success-color);
+    font-weight: bold;
+}
+
+
+/* Chat Interface */
+#chat-interface {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow chat to fill container height if needed */
+    min-height: 0; /* Prevent flexbox overflow issues */
+}
+
+#chat-log {
+    height: 50vh; /* Use viewport height for better scaling */
+    max-height: 600px; /* Add a max height */
+    min-height: 300px; /* Add a min height */
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fdfdfd; /* Slightly off-white */
+    border-radius: 8px; /* Consistent radius */
+    scroll-behavior: smooth;
+}
+
+#chat-log p {
+    margin: 12px 0;
+    padding: 10px 15px; /* Adjusted padding */
+    border-radius: 10px; /* Slightly more rounded */
+    max-width: 85%; /* Limit width */
+    word-wrap: break-word;
+    line-height: 1.5;
+    position: relative; /* For potential future pseudo-elements */
+}
+
+#chat-log p strong:first-child { /* Style the sender label */
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.85em; /* Smaller label */
+    font-weight: 600; /* Semibold */
+    opacity: 0.8;
+}
+
+/* Style user vs AI messages */
+#chat-log p.user-message {
+    background-color: var(--user-message-bg);
+    margin-left: auto; /* Align right */
+    border-bottom-right-radius: 2px; /* Add slight tail effect */
+}
+#chat-log p.user-message strong:first-child { color: var(--primary-dark); }
+
+#chat-log p.ai-message {
+    background-color: var(--ai-message-bg);
+    margin-right: auto; /* Align left */
+     border-bottom-left-radius: 2px; /* Add slight tail effect */
+}
+#chat-log p.ai-message strong:first-child { color: var(--secondary-dark); }
+
+#chat-log p.system-message {
+    background-color: var(--system-message-bg);
+    text-align: center;
+    max-width: 100%;
+    font-style: italic;
+    color: #af640c; /* Darker orange */
+    font-size: 0.9em;
+    padding: 8px 12px;
+}
+#chat-log p.system-message strong:first-child { color: #af640c; }
+
+
+#input-area {
+    display: flex;
+    gap: 10px;
+    align-items: stretch; /* Align items vertically */
+    margin-top: auto; /* Push to bottom if chat log is short */
+}
+
+#experiment-input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: inherit; /* Use body font */
+    resize: none; /* Disable manual resize, rely on rows */
+    min-height: 48px; /* Ensure decent minimum height */
+    transition: border-color 0.2s ease;
+}
+#experiment-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+
+#send-button {
+    padding: 0 20px; /* Adjust padding for icon + text */
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between icon and text */
+    height: 48px; /* Match textarea min-height */
+    flex-shrink: 0; /* Prevent button from shrinking */
+    white-space: nowrap;
+}
+
+#send-button svg {
+    fill: currentColor; /* Make SVG color match text */
+}
+
+
+#send-button:hover:not(:disabled) {
+    background-color: var(--primary-dark);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#send-button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Loading Indicator */
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0 5px 0; /* Less vertical padding */
+    text-align: center;
+    color: var(--light-text);
+    gap: 10px;
+    font-size: 0.9em;
+}
+
+/* Simple CSS Spinner */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-left-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Formatting for AI Output */
+#chat-log pre {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px; /* Consistent radius */
+    padding: 15px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace; /* Monospace font stack */
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+#chat-log code { /* Inline code */
+    background-color: var(--code-bg);
+    padding: 0.2em 0.4em;
+    margin: 0 0.1em;
+    font-size: 85%;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    color: #c0392b; /* Slight color difference for inline code */
+}
+#chat-log strong { /* Bold in AI response */
+   font-weight: 600; /* Semibold often looks better */
+}
+#chat-log em { /* Italics in AI response */
+   font-style: italic;
+}
+
+/* --- Responsiveness --- */
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 20px;
+        margin: 10px auto;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    #chat-log {
+        height: 60vh; /* Adjust height for smaller screens */
+        min-height: 250px;
+    }
+    #input-area {
+        /* Keep side-by-side for better use of space unless very narrow */
+    }
+    #experiment-input {
+        min-height: 44px;
+    }
+     #send-button {
+        height: 44px; /* Match textarea */
+        padding: 0 15px;
+    }
+    #send-button span {
+         /* Optionally hide text on very small screens */
+        /* display: none; */
+    }
+    #password-gate {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+     header h1 {
+        font-size: 1.6em;
+    }
+    .container {
+        padding: 15px;
+        margin: 5px auto; /* Less margin */
+    }
+     #chat-log p {
+        max-width: 95%; /* Allow slightly wider bubbles */
+    }
+     #send-button span {
+         /* Hide text on very small screens */
+        display: none;
+    }
+     #send-button {
+        padding: 0 12px; /* Adjust padding for icon only */
+        width: 44px; /* Make it square-ish */
+    }
+     #password-gate {
+        padding: 20px 15px;
+    }
+    #password-input {
+        font-size: 0.9em;
+    }
+    #password-submit {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+}

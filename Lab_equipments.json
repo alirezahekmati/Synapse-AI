@@ -1,0 +1,233 @@
+[
+  {
+    "Equipment_Name": "Analytical Balance",
+    "Model": "Mettler Toledo XS105",
+    "Category": "Measurement",
+    "Quantity": 2,
+    "Condition": "Excellent",
+    "Location": "Bench A",
+    "Last_Calibrated": "2025-02-15",
+    "Specs": "Max 120g, 0.01mg resolution",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "pH Meter",
+    "Model": "Thermo Scientific Orion Star A211",
+    "Category": "Measurement",
+    "Quantity": 3,
+    "Condition": "Good",
+    "Location": "Shelf B",
+    "Last_Calibrated": "2025-01-10",
+    "Specs": "Range 0-14, ±0.01 accuracy",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Digital Thermometer",
+    "Model": "Fluke 51 II",
+    "Category": "Measurement",
+    "Quantity": 5,
+    "Condition": "Good",
+    "Location": "Drawer C",
+    "Last_Calibrated": "2024-11-02",
+    "Specs": "Range -200°C to 1300°C",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Centrifuge",
+    "Model": "Eppendorf 5424R",
+    "Category": "Processing",
+    "Quantity": 1,
+    "Condition": "Excellent",
+    "Location": "Bench D",
+    "Last_Calibrated": "2025-03-01",
+    "Specs": "Max 21,130 x g, refrigerated",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Hot Plate Stirrer",
+    "Model": "IKA C-MAG HS7",
+    "Category": "Processing",
+    "Quantity": 4,
+    "Condition": "Good",
+    "Location": "Bench B",
+    "Last_Calibrated": "N/A",
+    "Specs": "Max 500°C, 1500 rpm",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Vortex Mixer",
+    "Model": "Scientific Industries Vortex-Genie 2",
+    "Category": "Processing",
+    "Quantity": 3,
+    "Condition": "Good",
+    "Location": "Shelf A",
+    "Last_Calibrated": "N/A",
+    "Specs": "Variable speed",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Fume Hood",
+    "Model": "Labconco Protector XL",
+    "Category": "Safety",
+    "Quantity": 2,
+    "Condition": "Good",
+    "Location": "Wall A",
+    "Last_Calibrated": "2025-01-20",
+    "Specs": "Face Velocity: 100 fpm",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Eye Wash Station",
+    "Model": "Bradley S19-270B",
+    "Category": "Safety",
+    "Quantity": 1,
+    "Condition": "Excellent",
+    "Location": "Wall B",
+    "Last_Calibrated": "2025-03-10",
+    "Specs": "ANSI Z358.1 compliant",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Safety Shower",
+    "Model": "Guardian G1643",
+    "Category": "Safety",
+    "Quantity": 1,
+    "Condition": "Excellent",
+    "Location": "Wall C",
+    "Last_Calibrated": "2025-03-10",
+    "Specs": "ANSI Z358.1 compliant",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Refrigerator",
+    "Model": "Thermo Scientific TSX",
+    "Category": "Storage",
+    "Quantity": 2,
+    "Condition": "Excellent",
+    "Location": "Room 102",
+    "Last_Calibrated": "2025-01-05",
+    "Specs": "2-8°C",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Freezer",
+    "Model": "Thermo Scientific TSX -20°C",
+    "Category": "Storage",
+    "Quantity": 1,
+    "Condition": "Good",
+    "Location": "Room 102",
+    "Last_Calibrated": "2025-01-05",
+    "Specs": "-20°C",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Ultra-Low Freezer",
+    "Model": "Eppendorf CryoCube F570h",
+    "Category": "Storage",
+    "Quantity": 1,
+    "Condition": "Excellent",
+    "Location": "Room 103",
+    "Last_Calibrated": "2025-02-10",
+    "Specs": "-80°C",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Autoclave",
+    "Model": "Tuttnauer 2340M",
+    "Category": "Sterilization",
+    "Quantity": 1,
+    "Condition": "Good",
+    "Location": "Room 104",
+    "Last_Calibrated": "2024-12-15",
+    "Specs": "23L capacity",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "UV Sterilization Cabinet",
+    "Model": "UVP CL-1000",
+    "Category": "Sterilization",
+    "Quantity": 1,
+    "Condition": "Good",
+    "Location": "Room 101",
+    "Last_Calibrated": "2025-01-25",
+    "Specs": "254nm wavelength",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Light Microscope",
+    "Model": "Olympus CX23",
+    "Category": "Microscopy",
+    "Quantity": 3,
+    "Condition": "Excellent",
+    "Location": "Room 105",
+    "Last_Calibrated": "2025-02-20",
+    "Specs": "40x-1000x magnification",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Stereomicroscope",
+    "Model": "Zeiss Stemi 305",
+    "Category": "Microscopy",
+    "Quantity": 1,
+    "Condition": "Good",
+    "Location": "Room 105",
+    "Last_Calibrated": "2025-01-15",
+    "Specs": "5x-40x magnification",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Micropipettes Set",
+    "Model": "Eppendorf Research plus",
+    "Category": "Liquid Handling",
+    "Quantity": 5,
+    "Condition": "Good",
+    "Location": "Shelf C",
+    "Last_Calibrated": "2025-02-01",
+    "Specs": "0.5-10µL, 10-100µL, 100-1000µL",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Multichannel Pipette",
+    "Model": "Eppendorf Research plus 8-channel",
+    "Category": "Liquid Handling",
+    "Quantity": 1,
+    "Condition": "Good",
+    "Location": "Shelf C",
+    "Last_Calibrated": "2025-02-01",
+    "Specs": "30-300µL",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Spectrophotometer",
+    "Model": "Thermo Scientific GENESYS 10S UV-Vis",
+    "Category": "Analysis",
+    "Quantity": 1,
+    "Condition": "Excellent",
+    "Location": "Bench E",
+    "Last_Calibrated": "2025-01-30",
+    "Specs": "190-1100nm range",
+    "Available": "Yes"
+  },
+  {
+    "Equipment_Name": "Microplate Reader",
+    "Model": "BioTek Synergy HTX",
+    "Category": "Analysis",
+    "Quantity": 1,
+    "Condition": "Good",
+    "Location": "Bench F",
+    "Last_Calibrated": "2024-12-10",
+    "Specs": "Absorbance, Fluorescence, Luminescence",
+    "Available": "Maintenance"
+  },
+  {
+    "Equipment_Name": "PCR Thermal Cycler",
+    "Model": "Applied Biosystems 2720",
+    "Category": "Molecular Biology",
+    "Quantity": 1,
+    "Condition": "Fair",
+    "Location": "Room 106",
+    "Last_Calibrated": "2024-11-15",
+    "Specs": "96-well, heated lid",
+    "Available": "Repair"
+  }
+]

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Synapse - AI Lab Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Password Gate Section -->
+    <div id="password-gate">
+      <h2>Enter Access Code</h2>
+      <div class="password-input-group">
+        <input type="password" id="password-input" placeholder="Password" />
+        <button id="password-submit">Login</button>
+      </div>
+      <p id="password-error" class="error-message" style="display: none"></p>
+    </div>
+
+    <!-- Main Content Area (Initially Hidden) -->
+    <div class="container" style="display: none">
+      <header>
+        <h1>🧪 Project Synapse</h1>
+        <p>AI Experimental Protocol Generator</p>
+      </header>
+
+      <section id="chat-interface" style="display: none">
+        <h2>Experiment Planner</h2>
+        <p
+          id="initial-error-message"
+          class="error-message"
+          style="display: none; text-align: center; margin-bottom: 15px"
+        ></p>
+        <div id="chat-log">
+          <!-- Chat messages will appear here -->
+        </div>
+        <div id="input-area">
+          <textarea
+            id="experiment-input"
+            placeholder="Describe the experiment you want to plan..."
+            rows="3"
+          ></textarea>
+          <button id="send-button" title="Send Experiment Description">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="currentColor"
+            >
+              <path d="M120-160v-240l320-80-320-80v-240l760 320-760 320Z" />
+            </svg>
+            <span>Send</span>
+          </button>
+        </div>
+        <div id="loading-indicator" class="loading" style="display: none">
+          <div class="spinner"></div>
+          <span>Generating protocol...</span>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
